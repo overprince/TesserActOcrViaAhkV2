@@ -7,8 +7,11 @@
 
 > **为什么要做这么个玩意儿？**  
 > `Windows.Media.Ocr`（WinRT）对中文、艺术字和小字识别效果差。  (但很感谢Descolada/OCR，我用了很久，直到被微软的这个模型折磨的受不了)
-> `Microsoft.Windows.AI.Imaging.TextRecognizer`（Windows App SDK）效果好得多，但我的Win10 LTSC 无法使用。  
+> 
+> `Microsoft.Windows.AI.Imaging.TextRecognizer`（Windows App SDK）效果好得多，但我的Win10 LTSC 无法使用。
+> 
 > 如果你确实在用 Win11，可以切换到 [Windows App SDK 版本](#windows-app-sdk-升级版仅-win11)。我没试过，但据说还不错。
+> 
 > Tesseract算是win10 能用的还不错的本地ocr应用了。
 
 ---
