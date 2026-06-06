@@ -64,7 +64,7 @@ global g_OCR_Tesseract := "D:\你的路径\Tesseract-OCR\tesseract.exe"
 
 ```autohotkey
 #Requires AutoHotkey v2.0
-#Include "WinOCR_Tesseract\WinOCR.ahk"
+#Include "WinOCR_Tesseract\TesseraActOcrViaAhkV2.ahk"
 CoordMode "Pixel", "Screen"
 
 result := WinOCR(100, 200, 300, 50)
