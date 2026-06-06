@@ -31,7 +31,7 @@ global g_OCR_Tesseract := ""
 
 ; Default OCR language(s). Use "+" to combine, e.g. "chi_sim+eng"
 ; Available after setup: chi_sim (Chinese), eng (English)
-global g_OCR_Language := "chi_sim+eng"
+global g_OCR_Language := "chi_sim"
 
 ; Tesseract PSM (Page Segmentation Mode):
 ;   3 = Auto (default, good for general text)
@@ -156,7 +156,7 @@ __TesseractOcr(imagePath, language := "") {
     outFile := outBase ".txt"
 
     cmd := Format('"{}" "{}" "{}" -l {} --psm {}', tessPath, imagePath, outBase, lang, g_OCR_PSM)
-    exitCode := RunWait(cmd, , "Min")
+    exitCode := RunWait(cmd, , "Hide")
 
     output := ""
     try output := FileRead(outFile, "UTF-8-RAW")
