@@ -1,4 +1,4 @@
-# WinOCR — AHK v2 屏幕 OCR
+# TesserActOcrViaAhkV2
 
 基于 [Tesseract 5 LSTM](https://github.com/UB-Mannheim/tesseract) 的屏幕文字识别库，适用于 AutoHotkey v2。  
 框选屏幕任意区域即可提取文字——，支持 **Windows 10 LTSC**、Windows 10、Windows 11。
