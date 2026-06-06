@@ -104,7 +104,7 @@ else
 
 ```autohotkey
 global g_OCR_DefaultScale := 1.0   ; 默认放大倍率
-global g_OCR_Language    := "chi_sim+eng"  ; 默认语言
+global g_OCR_Language    := "chi_sim"  ; 默认语言简中。不建议的混合语言举例："chi_sim+eng" 
 global g_OCR_PSM         := 6      ; 页面分割模式
 global g_OCR_Tesseract   := ""     ; Tesseract 路径（留空自动查找）
 ```
@@ -117,7 +117,7 @@ global g_OCR_Tesseract   := ""     ; Tesseract 路径（留空自动查找）
 | `2.0` | 2 倍放大。推荐值，适合常规屏幕文字（12-16px）。 |
 | `3.0` | 3 倍放大。小字最佳，但速度明显变慢。 |
 
-倍率越高，Tesseract 能分析的像素越多，精度越高，但耗时也越大（像素数平方增长）。
+倍率越高，Tesseract 能分析的像素越多，精度越高，但耗时也越大（像素数平方增长）。1.0就够用，放大只适合不黏连的小字
 
 ### PSM 模式（`g_OCR_PSM`）
 
